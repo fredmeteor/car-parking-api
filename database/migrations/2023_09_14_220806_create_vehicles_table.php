@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('vehicles', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained();
+            $table->string('plate_number');
+            $table->string('description')->nullable();
+
             $table->timestamps();
         });
     }

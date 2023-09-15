@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class ParkingsTableSeeder extends Seeder
+class mysqlUsersTableSeeder extends Seeder
 {
 
     /**
@@ -15,8 +15,9 @@ class ParkingsTableSeeder extends Seeder
     public function run()
     {
         
-      \Iseed::generateSeed('users', 'mysql');
-      
+
+        \DB::table('users')->delete();
+        
         
         
     }

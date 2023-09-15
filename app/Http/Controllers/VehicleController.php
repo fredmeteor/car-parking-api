@@ -1,8 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreVehicleRequest;
+use App\Http\Resources\VehicleResource;
+use App\Models\Vehicle;
+use Illuminate\Http\Response;
 
 class VehicleController extends Controller
 {
